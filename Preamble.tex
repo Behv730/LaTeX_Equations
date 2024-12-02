@@ -1,0 +1,72 @@
+%   Behv 2024
+%   Áframhaldandi breytingar á eftirfarandi ->
+%	
+% 	Breyttur kóði frá eftirfarandi hlekk: 
+%		https://ugla.hi.is/kerfi/view/page.php?sid=1432
+% 
+% 	Höfundur breytinga: 
+%		Krista Hannesdóttir (krista.hannesdottir@gmail.com).
+%		Breytingar gefnar út undir GPLv3 leyfi.
+%		Alpha útgáfa.
+
+
+% Encoding, íslenskir stafir.
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel} % Change to icelandic for icelandic TOC and names/labels
+\usepackage{csquotes} % Vandamál varðandi gæsalappir í heimildaskrá.
+
+\usepackage[intoc]{nomencl}
+\usepackage{enumerate,color}
+\usepackage{url}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{appendix}
+\usepackage{eso-pic}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[nottoc]{tocbibind}
+\usepackage{fancyhdr} % headings and footers
+\usepackage[format=plain,labelformat=simple,labelsep=colon]{caption}
+\usepackage{placeins}
+\usepackage{cuted} % strip command
+
+\usepackage{href-ul}
+
+% Tables.
+\usepackage{tabularray} % A more advanced table system \tblr inside \table
+\usepackage{xcolor} % colors, used with tabularray
+
+% Graphics and pictures.
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{tikz} % key for drawing 
+\usetikzlibrary{calc}
+\usepackage{circuitikz} % a circuit drawing version of tikz
+\usepackage{tikz,pgffor}
+\usetikzlibrary{calc, arrows, shapes.gates.logic.US}
+\usepackage{tkz-euclide}
+\usepackage{matlab-prettifier} % Format code to look like in the matlab editor
+
+%\usetkzobj{all}
+\usepackage[margin=1.5cm,top=2cm,bottom=1.75cm]{geometry}
+\usepackage[inkscapelatex=false]{svg} % svg package
+
+% Configurations
+\graphicspath{{./figures/}} % store .svg here also
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\newcommand{\sectiontitle}[1]{\vspace{0.2cm}{\fontsize{11}{14}\selectfont #1 \vspace{0.1cm}}}
+\setlength{\columnseprule}{0.3pt} % vertical column line
+\setlength{\columnsep}{0.75cm}
+
+% Units package
+\usepackage{siunitx}
+\usepackage{cancel}
+
+
+% Better supported font, for math and icelandic
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+% custom Commands
+% put todo notes into this and they will pop out in the .pdf document
+\newcommand\todo[1]{\small \textcolor{red}{#1} \normalsize}
