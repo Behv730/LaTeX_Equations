@@ -1,11 +1,15 @@
-\documentclass[a4paper, twoside, twocolumn,fleqn]{article}
+\documentclass[a4paper, twoside, twocolumn,fleqn,10pt]{article} % Change the font size here (10pt to 12pt fx)
 \input{Preamble.tex}
 \begin{document}
-\pagestyle{fancy} % for header
+\pagestyle{fancy} % Header
 
 % Names for Header
 \fancyhead[LO,LE]{\textbf{Rafeindarásir TÆK306G}}
 \fancyhead[RO,RE]{Haust 2024}
+
+%%%%%%%%%%%%%
+% EQUATIONS %
+%%%%%%%%%%%%%
 
 \sectiontitle{Section}
 \[
@@ -16,13 +20,13 @@
     \omega_{0} = \frac{1}{\sqrt{ LC }}
 \]
 
-\sectiontitle{RLC rásir}
+\sectiontitle{RLC}
+\sectionsubtitle{Undirdempað}
 \[
     \frac{dv(0^{+})}{dt} = \frac{i_{C}(0^{+})}{C} = s_{1}A_{1} + s_{2}A_{2}
 \]
 
 Text to explain something or ask questions Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-
 \[
     \int x^n \, dx = \frac{x^{n+1}}{n+1}, \quad \int e^x \, dx = e^x, \quad \int \ln x \, dx = x \ln x - x
 \]
@@ -36,7 +40,7 @@ Text to explain something or ask questions Lorem ipsum lorem ipsum lorem ipsum l
 
 % single page
 \onecolumn{
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum 
 }
 \twocolumn
 continue the two columns
